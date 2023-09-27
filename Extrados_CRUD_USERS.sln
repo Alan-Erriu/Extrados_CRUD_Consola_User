@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extrados_CRUD_USERS", "Extrados_CRUD_USERS\Extrados_CRUD_USERS.csproj", "{74B7DF19-16A2-4DA9-AB0F-0686E7920053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "ClassLibrary1\DAO.csproj", "{9C2EA227-1AEB-47C6-8E82-FF29D7F5E540}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74B7DF19-16A2-4DA9-AB0F-0686E7920053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B7DF19-16A2-4DA9-AB0F-0686E7920053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B7DF19-16A2-4DA9-AB0F-0686E7920053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B7DF19-16A2-4DA9-AB0F-0686E7920053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C2EA227-1AEB-47C6-8E82-FF29D7F5E540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C2EA227-1AEB-47C6-8E82-FF29D7F5E540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C2EA227-1AEB-47C6-8E82-FF29D7F5E540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C2EA227-1AEB-47C6-8E82-FF29D7F5E540}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FD5FCF2-AEDC-4557-92C8-FAF042BAAF0C}
+	EndGlobalSection
+EndGlobal
