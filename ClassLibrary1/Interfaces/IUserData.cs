@@ -1,12 +1,14 @@
-﻿namespace DAO.Interfaces
+﻿using DAO.Models;
+
+namespace DAO.Interfaces
 {
-    internal interface IDataUser
+    public interface IUserData
     {
         void CreateUser(string name, int age);
         void DeleteUserById(int id);
         void Dispose();
         void GetUserById(int id);
-        void getUsers();
+        List<User> GetUsers();
         void UpdateUserById(int id, string name, int age);
     }
 }

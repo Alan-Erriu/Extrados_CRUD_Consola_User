@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace DAO.Data
 {
-    public class DataUser : IDisposable, IDataUser
+    public class UserData : IDisposable, IUserData
     {
 
         private string connectionString = @"Data Source=DESKTOP-D5JMIHP\SQLEXPRESS;Initial Catalog=user;User ID=code;Password=1506;";
@@ -13,24 +13,20 @@ namespace DAO.Data
         private SqlConnection dbConnection;
 
 
-        public DataUser()
+        public UserData()
         {
             dbConnection = new SqlConnection(connectionString);
 
         }
 
         //obtener todos los usuarios de la db
-        public void getUsers()
+        public List<User> GetUsers()
         {
             using (dbConnection)
             {
                 var sql = "SELECT user_id, user_name, user_age ,user_status FROM [user]";
                 var lst = dbConnection.Query<User>(sql);
-                foreach (var item in lst)
-                {
-
-                    Console.WriteLine($"codigo: {item.user_id} nombre: {item.user_name} edad: {item.user_age} status {item.user_status}");
-                }
+                return lst.ToList();
             }
 
 

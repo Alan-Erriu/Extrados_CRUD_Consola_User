@@ -1,11 +1,20 @@
-﻿
-using DAO.Data;
+﻿using Autofac;
+using Extrados_CRUD_USERS;
 
-using (DataUser dataUser = new DataUser())
+
+
+var container = IoC.Configure();
+using (var scope = container.BeginLifetimeScope())
 {
-    //dataUser.GetUserById(15);
-    //dataUser.CreateUser("lucas", 33);
-    //dataUser.DeleteUserById(15);
-    //dataUser.UpdateUserById(15, "jorge", 25);
-    //dataUser.getUsers();
+    var userManager = scope.Resolve<UserManager>();
+
+
+    var usersOrderedByAge = userManager.GetUsersOrderByAge();
+
+
+    foreach (var user in usersOrderedByAge)
+    {
+        Console.WriteLine($"Nombre: {user.user_name}, Edad: {user.user_age}");
+    }
 }
+
