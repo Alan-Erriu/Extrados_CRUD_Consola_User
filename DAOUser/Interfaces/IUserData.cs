@@ -1,6 +1,6 @@
-﻿using DAO.Models;
+﻿using DAOUser.Models;
 
-namespace DAO.Interfaces
+namespace DAOUser.Interfaces
 {
     public interface IUserData
     {

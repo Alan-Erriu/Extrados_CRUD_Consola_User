@@ -1,4 +1,4 @@
-﻿namespace DAO.Models
+﻿namespace DAOUser.Models
 {
     public class User
     {
@@ -6,6 +6,5 @@
         public string user_name { get; set; }
         public int user_age { get; set; }
         public bool user_status { get; set; }
-
     }
 }

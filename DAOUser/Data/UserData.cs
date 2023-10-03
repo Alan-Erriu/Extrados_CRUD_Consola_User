@@ -1,13 +1,12 @@
-﻿using DAO.Interfaces;
-using DAO.Models;
+﻿using DAOUser.Interfaces;
+using DAOUser.Models;
 using Dapper;
 using System.Data.SqlClient;
 
-namespace DAO.Data
+namespace DAOUser.Data
 {
     public class UserData : IDisposable, IUserData
     {
-
         private string connectionString = @"Data Source=DESKTOP-D5JMIHP\SQLEXPRESS;Initial Catalog=user;User ID=code;Password=1506;";
 
         private SqlConnection dbConnection;

@@ -1,7 +1,6 @@
 ﻿using Autofac;
-using DAO.Data;
-using DAO.Interfaces;
-
+using DAOUser.Data;
+using DAOUser.Interfaces;
 
 namespace Extrados_CRUD_USERS
 {
